@@ -1,0 +1,6 @@
+<snippet>
+	<description>#includescript Scriptnummer</description>
+    <content><![CDATA[#includescript ${1:Scriptnummer}]]></content>
+    <tabTrigger>includescr</tabTrigger>
+    <scope>source.future</scope>
+</snippet>

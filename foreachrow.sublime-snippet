@@ -1,0 +1,9 @@
+<snippet>
+	<description>foreachrow Schleife</description>
+    <content><![CDATA[foreachrow (${1:tTabelle}; ${2:nIterator})
+{
+	${0:/* code */}
+};]]></content>
+    <tabTrigger>foreachrow</tabTrigger>
+    <scope>source.future</scope>
+</snippet>
