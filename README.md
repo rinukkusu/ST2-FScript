@@ -1,4 +1,3 @@
-testi
-=====
+Future Script - the hottest shit!
+=================================
 
-FScript
