@@ -1,0 +1,8 @@
+<snippet>
+	<description>FUNCTION ... ENDFUNCTION</description>
+    <content><![CDATA[FUNCTION: ${1:type} ${2:Functionname}(${3:/* Variables */});
+	$0
+ENDFUNCTION;]]></content>
+    <tabTrigger>function</tabTrigger>
+    <scope>source.future</scope>
+</snippet>
