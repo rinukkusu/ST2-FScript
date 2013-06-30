@@ -1,3 +1,4 @@
 {
-	"extensions": ["cpp"]
+	"extensions": ["cpp"],
+	"SyntaxCheckOnSave": false
 }
