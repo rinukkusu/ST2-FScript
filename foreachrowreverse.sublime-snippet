@@ -1,0 +1,9 @@
+<snippet>
+	<description>foreachrowreverse Schleife</description>
+    <content><![CDATA[foreachrowreverse (${1:tTabelle}; ${2:nIterator})
+{
+	${0:/* code */}
+};]]></content>
+    <tabTrigger>foreachrowreverse</tabTrigger>
+    <scope>source.future</scope>
+</snippet>
