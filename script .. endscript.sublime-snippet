@@ -1,9 +1,11 @@
 <snippet>
 	<description>SCRIPT ... ENDSCRIPT</description>
-    <content><![CDATA[SCRIPT:${1:Scriptnummer},${2:Scripttitel},${3:Modul1},${4:Modul2},${5:Modul3},${6:Verzeichnis},${7:Scripticon}
+    <content><![CDATA[///////////////////////////////////////////////////////////////////////////////
+SCRIPT:${1:Scriptnummer},${2:Scripttitel},${3:Modul1},${4:Modul2},${5:Modul3},${6:Verzeichnis},${7:Scripticon}
 	//SHOWINDIALOG: ${8:Dialognummer}
 	$0
-ENDSCRIPT]]></content>
+ENDSCRIPT
+///////////////////////////////////////////////////////////////////////////////]]></content>
     <tabTrigger>script</tabTrigger>
     <scope>source.future</scope>
 </snippet>
