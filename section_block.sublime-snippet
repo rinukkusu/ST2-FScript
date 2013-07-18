@@ -1,0 +1,9 @@
+<snippet>
+	<description>generates a block for a new section</description>
+	<content><![CDATA[///////////////////////////////
+// ${1:Blockname}
+///////////////////////////////
+$0]]></content>
+	<tabTrigger>CBLOCK</tabTrigger>
+	<scope>source.future</scope>
+</snippet>
