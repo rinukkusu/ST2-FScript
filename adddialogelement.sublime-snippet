@@ -1,6 +1,6 @@
 <snippet>
 	<description>Adds a dialog element</description>
-	<content><![CDATA[ADDDIALOGELEMENT:${1:Dialognummer};${2:Spaltennummer};NAME=${3:Elementname};TYPE=${4:Elementtyp};XPOS=${5:XPosition};YPOS=${6:YPosition};WIDTH=${7:Breite};HEIGHT=${8:Höhe};ONCHANGESCRIPT1=${9:OnChange};NAMEPOSITION=${10:4};NEXTTABPOS=${11:0};VISIBLE=${12:1};READONLY=${13:0};$0]]></content>
+	<content><![CDATA[ADDDIALOGELEMENT:${1:Dialognummer};${2:Spaltennummer};NAME=${3:Elementname};TYPE=${4:Elementtyp};XPOS=${5:XPosition};YPOS=${6:YPosition};WIDTH=${7:Breite};HEIGHT=${8:Hoehe};ONCHANGESCRIPT1=${9:OnChange};NAMEPOSITION=${10:4};NEXTTABPOS=${11:0};VISIBLE=${12:1};READONLY=${13:0};$0]]></content>
 	<tabTrigger>ADDDIALOGELEMENT</tabTrigger>
 	<scope>source.future</scope>
 </snippet>
