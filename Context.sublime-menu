@@ -1,0 +1,5 @@
+[
+    { "caption": "-" },
+    { "command": "find_declaration", "caption": "Gehe zu Deklaration" },
+    { "caption": "-", "id": "end" }
+]

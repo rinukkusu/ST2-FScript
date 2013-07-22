@@ -683,7 +683,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(return|while|for|if|else|foreachrow)\b</string>
+					<string>\b(funcreturn|return|while|for|if|else|foreachrow)\b</string>
 					<key>name</key>
 					<string>keyword.control.java</string>
 				</dict>
