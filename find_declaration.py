@@ -18,7 +18,7 @@ class find_declaration(sublime_plugin.TextCommand):
 			bFound = False
 
 			if wholeline.find('Call:' + text) > 0:
-				r = self.view.find_all('FUNCTION\:\s(int|void|bool|double|CString|CTable|CDateTime|CMoney)\s(' + text + ')')
+				r = self.view.find_all('FUNCTION\:\s(int|void|BOOL|double|CString|CTable|CDateTime|CMoney)\s(' + text + ')')
 				if len(r) > 0:
 					scrollreg = r[0]
 					bFound = True
