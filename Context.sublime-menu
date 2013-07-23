@@ -1,5 +1,6 @@
 [
     { "caption": "-" },
     { "command": "find_declaration", "caption": "Gehe zu Deklaration" },
+    { "command": "goto_script", "caption": "Gehe zu Scriptdefinition" },
     { "caption": "-", "id": "end" }
 ]

@@ -1,7 +1,6 @@
 import sublime, sublime_plugin
 import re
 
-
 class find_declaration(sublime_plugin.TextCommand):
 	def run(self, edit):
 		if "Future" in self.view.settings().get('syntax'):
@@ -38,3 +37,19 @@ class find_declaration(sublime_plugin.TextCommand):
 				sublime.error_message('Es konnte keine Deklaration fuer "' + text + '" gefunden werden.')
 		else:
 			sublime.error_message('Keine FutureScript Datei.')
+
+class goto_script(sublime_plugin.TextCommand):
+	def run(self, edit):
+		if "Future" in self.view.settings().get('syntax'):
+			pos = self.view.sel()[0]
+
+			if pos.end() == pos.begin():
+				pos = self.view.word(self.view.sel()[0])
+
+			text = self.view.substr(pos)
+			r = self.view.find(r'SCRIPT\:' + text + '.*', 0)
+			if r is not None:
+				self.view.sel().add(r)
+				self.view.show(r, True)
+			else:
+				sublime.error_message('Definition nicht in diesem Script.')
