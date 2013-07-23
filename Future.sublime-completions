@@ -4,6 +4,7 @@
 	"completions":
 	[
 		/* CDateTime */
+		{ "trigger": "CDateTime", "contents": "CDateTime $0" };
 		{ "trigger": "CompareDate", "contents": "CompareDate(${1:dtDate2})$0" },
 		{ "trigger": "CopyDate", "contents": "CopyDate(${1:dtDate2})$0" },
 		{ "trigger": "CopyTime", "contents": "CopyTime(${1:dtDate2})$0" },
@@ -63,6 +64,7 @@
 		{ "trigger": "YearMinus", "contents": "YearMinus(${1:nNumber})$0" },
 
 		/* CMoney */
+		{ "trigger": "CMoney", "contents": "CMoney $0" };
 		{ "trigger": "CalculateNewCurrency", "contents": "CalculateNewCurrency(${1:nCurrency})$0" },
 		{ "trigger": "GetCurrency", "contents": "GetCurrency()$0" },
 		{ "trigger": "GetCurrencyValue", "contents": "GetCurrencyValue(${1:nCurrency})$0" },
@@ -83,6 +85,7 @@
 		{ "trigger": "SetValue", "contents": "SetValue(${1:dValue})$0" },
 
 		/* CTable */
+		{ "trigger": "CTable", "contents": "CTable $0" };
 		{ "trigger": "AddAllInexistentRowsFromTable", "contents": "AddAllInexistentRowsFromTable(${1:tSource}, ${2:nIdCol})$0" },
 		{ "trigger": "AddAllRowsFromTable", "contents": "AddAllRowsFromTable(${1:tSource})$0" },
 		{ "trigger": "AddColumn", "contents": "AddColumn(${1:strName}, ${2:nType}, ${3:nParameter})$0" },
@@ -102,9 +105,82 @@
 		{ "trigger": "ClearRow", "contents": "ClearRow(${1:nRow})$0" },
 		{ "trigger": "Col1IsBeginningOfCol2", "contents": "Col1IsBeginningOfCol2(${1:nCol1}, ${2:nCol2}, ${3:nRow}, ${4:bRemoveLeadingZero}, ${5:bMustHaveContent})$0" },
 		{ "trigger": "CombineTable", "contents": "CombineTable(${1:tTable2}, ${2:nColIdentifier}, ${3:nColName}, ${4:nColAddValue1}, ${5:nColAddValue2}, ${6:nSortDir})$0" },
+		{ "trigger": "CopyElement", "contents": "CopyElement(${1:nTargetCol}, ${2:nTargetRow}, ${3:nSourceCol}, ${4:nSourceRow}, ${5:tSourceTable})$0" },
+		{ "trigger": "CopyElements", "contents": "CopyElements(${1:strTargetCols}, ${2:nTargetRow}, ${3:strSourceCols}, ${4:nSourceRow}, ${5:tSourceTable})$0" },
+		{ "trigger": "CopyRowFromTable", "contents": "CopyRowFromTable(${1:nTargetRow}, ${2:nSourceRow}, ${3:tSourceTable})$0" },
+		{ "trigger": "CreateWordMailList", "contents": "CreateWordMailList(${1:strDocument})$0" },
+		{ "trigger": "DeleteRowsColumnConditionNOT", "contents": "DeleteRowsColumnConditionNOT(${1:nColumn}, ${2:dConditionValue})$0" },
+		{ "trigger": "DeleteRowsColumnCondition", "contents": "DeleteRowsColumnCondition(${1:nColumn1}, ${2:dConditionValue1}, ${3:nColumn2}, ${4:dConditionValue2})$0" },
+		{ "trigger": "DeleteAllColumns", "contents": "DeleteAllColumns()$0" },
+		{ "trigger": "DeleteAllRows", "contents": "DeleteAllRows()$0" },
+		{ "trigger": "DeleteAll", "contents": "DeleteAll()$0" },
+		{ "trigger": "DeleteRow", "contents": "DeleteRow(${1:nRow})$0" },
+		{ "trigger": "DeleteColumn", "contents": "DeleteColumn(${1:nColumn})$0" },
+		{ "trigger": "DeleteColumnByIdentifier", "contents": "DeleteColumnByIdentifier(${1:nIdentifier})$0" },
+		{ "trigger": "ExtractUniqueNumbers", "contents": "ExtractUniqueNumbers(${1:nColumn})$0" },
+		{ "trigger": "GetActiveRow", "contents": "GetActiveRow()$0" },
+		{ "trigger": "GetAverageDOUBLE", "contents": "GetAverageDOUBLE(${1:nColumn})$0" },
+		{ "trigger": "GetAverageMONEY", "contents": "GetAverageMONEY(${1:nColumn})$0" },
+		{ "trigger": "GetColumnCount", "contents": "GetColumnCount()$0" },
+		{ "trigger": "GetColumnNumberIdentifier", "contents": "GetColumnNumberIdentifier(${1:nIdentifier1}, ${2:nIdentifier2})$0" },
+		{ "trigger": "GetColumnNumberIdentifier1", "contents": "GetColumnNumberIdentifier1(${1:nIdentifier1})$0" },
+		{ "trigger": "GetColumnNumberIdentifier2", "contents": "GetColumnNumberIdentifier2(${1:nIdentifier2})$0" },
+		{ "trigger": "GetColumnNumberInexact", "contents": "GetColumnNumberInexact(${1:strColumnName}, ${2:nExactStatus}, ${3:nTruncateLength})$0" },
+		{ "trigger": "GetColumnNumber", "contents": "GetColumnNumber(${1:strColumnName})$0" },
+		{ "trigger": "GetColumnName", "contents": "GetColumnName(${1:nColumn})$0" },
+		{ "trigger": "GetColumnPrecisionPostComma", "contents": "GetColumnPrecisionPostComma(${1:nColumn})$0" },
+		{ "trigger": "GetColumnPrecisionPreComma", "contents": "GetColumnPrecisionPreComma(${1:nColumn})$0" },
+		{ "trigger": "GetColumnParameter", "contents": "GetColumnParameter(${1:nColumn})$0" },
+		{ "trigger": "GetColumnIdentifier1", "contents": "GetColumnIdentifier1(${1:nColumn})$0" },
+		{ "trigger": "GetColumnIdentifier2", "contents": "GetColumnIdentifier2(${1:nColumn})$0" },
+		{ "trigger": "GetColumnType", "contents": "GetColumnType(${1:nColumn})$0" },
+		{ "trigger": "GetMaxDOUBLE", "contents": "GetMaxDOUBLE(${1:nColumn})$0" },
+		{ "trigger": "GetMinDOUBLE", "contents": "GetMinDOUBLE(${1:nColumn})$0" },
+		{ "trigger": "GetMaxMONEY", "contents": "GetMaxMONEY(${1:nColumn})$0" },
+		{ "trigger": "GetMinMONEY", "contents": "GetMinMONEY(${1:nColumn})$0" },
+		{ "trigger": "GetMaxTIME", "contents": "GetMaxTIME(${1:nColumn})$0" },
+		{ "trigger": "GetMinTIME", "contents": "GetMinTIME(${1:nColumn})$0" },
+		{ "trigger": "GetTableAsText", "contents": "GetTableAsText(${1:bShowFirstColumn}, ${2:bShowColumns})$0" },
+		{ "trigger": "GetCount", "contents": "GetCount(${1:nColumn})$0" },
+		{ "trigger": "GetLinkCount", "contents": "GetLinkCount(${1:nColumn}, ${2:nRow})$0" },
+		{ "trigger": "GetElementLinkRecord", "contents": "GetElementLinkRecord(${1:nColumn}, ${2:nRow})$0" },
+		{ "trigger": "GetElementLinkText", "contents": "GetElementLinkText(${1:nColumn}, ${2:nRow}, ${2:nLinkColumn})$0" },
+		{ "trigger": "GetElementTABLE", "contents": "GetElementTABLE(${1:nColumn}, ${2:nRow})$0" },
+		{ "trigger": "GetElementMONEY", "contents": "GetElementMONEY(${1:nColumn}, ${2:nRow})$0" },
+		{ "trigger": "GetElementDATE", "contents": "GetElementDATE(${1:nColumn}, ${2:nRow})$0" },
+		{ "trigger": "GetElementDOUBLE", "contents": "GetElementDOUBLE(${1:nColumn}, ${2:nRow})$0" },
+		{ "trigger": "GetElementBOOL", "contents": "GetElementBOOL(${1:nColumn}, ${2:nRow})$0" },
+		{ "trigger": "GetElementSTRING", "contents": "GetElementSTRING(${1:nColumn}, ${2:nRow})$0" },
+		{ "trigger": "GetRowContent", "contents": "GetRowContent(${1:nRow})$0" },
+		{ "trigger": "GetRowContentSelection", "contents": "GetRowContentSelection(${1:nRow}, ${2:strColumns})$0" },
+		{ "trigger": "GetRowCount", "contents": "GetRowCount()$0" },
+		{ "trigger": "GetSumDOUBLE", "contents": "GetSumDOUBLE(${1:nColumn})$0" },
+		{ "trigger": "GetSumMONEY", "contents": "GetSumMONEY(${1:nColumn})$0" },
+		{ "trigger": "InsertRow", "contents": "InsertRow(${1:nPosition})$0" },
+		{ "trigger": "IsSameRow", "contents": "IsSameRow(${1:nThisRow}, ${2:nOtherRow}, ${3:tOtherTable})$0" },
+		{ "trigger": "LoadTableFromDisk", "contents": "LoadTableFromDisk(${1:strFileName})$0" },
+		{ "trigger": "MoveColumn", "contents": "MoveColumn(${1:nColumn}, ${2:nNewPos})$0" },
+		{ "trigger": "OpenDocumentReplaceText", "contents": "OpenDocumentReplaceText(${1:strDocument})$0" },
+		{ "trigger": "ParseAssignmentStringRow", "contents": "ParseAssignmentStringRow(${1:strText}, ${2:nRow})$0" },
+		{ "trigger": "ReadFileAsTable", "contents": "ReadFileAsTable(${1:strFileName})$0" },
+		{ "trigger": "ReadFromExcel", "contents": "ReadFromExcel(${1:nStartCol}, ${2:nStartRow}, ${3:nEndCol}, ${4:nEndRow}, ${5:strFile})$0" },
+		{ "trigger": "SaveElementToDisk", "contents": "SaveElementToDisk(${1:nCol}, ${2:nRow}, ${3:strFileName})$0" },
+		{ "trigger": "SaveTableToDisk", "contents": "SaveTableToDisk(${1:strFileName})$0" },
+		{ "trigger": "SaveTableAsTextToDisk", "contents": "SaveTableAsTextToDisk(${1:strFileName}, ${2:bWriteColumnNames})$0" },
+		{ "trigger": "SetAllColumnActive", "contents": "SetAllColumnActive()$0" },
+		{ "trigger": "SetAllColumnInActive", "contents": "SetAllColumnInActive()$0" },
+		{ "trigger": "SetAllColumnParameter", "contents": "SetAllColumnParameter(${1:nParameter})$0" },
+		{ "trigger": "SetAllColumnPrecisionPostComma", "contents": "SetAllColumnPrecisionPostComma(${1:nPrecision})$0" },
+		{ "trigger": "SetAllColumnPrecisionPreComma", "contents": "SetAllColumnPrecisionPreComma(${1:nPrecision})$0" },
+		{ "trigger": "SetAllColumnWidth", "contents": "SetAllColumnWidth(${1:nWidth})$0" },
+		{ "trigger": "SetColumnActive", "contents": "SetColumnActive(${1:nColumn})$0" },
+		{ "trigger": "SetColumnInActive", "contents": "SetColumnInActive(${1:nColumn})$0" },
+		{ "trigger": "SetColumnPrecisionPostComma", "contents": "SetColumnPrecisionPostComma(${1:nPrecision})$0" },
+		{ "trigger": "SetColumnPrecisionPreComma", "contents": "SetColumnPrecisionPreComma(${1:nPrecision})$0" },
 
 
 
+ ReadFromExcel(int nStartCol,int nStartRow,int nEndCol,int nEndRow,CString strFile); 
 		{ "trigger": "D.GetListSelection", "contents": "D.GetListSelection(${1:strTitle},${2:strName1},${3:tTable})$0" }
 	]
 }
