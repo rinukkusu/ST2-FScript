@@ -3,6 +3,13 @@
     <content><![CDATA[///////////////////////////////////////////////////////////////////////////////
 SCRIPT:${1:Scriptnummer},${2:Scripttitel},${3:Modul1},${4:Modul2},${5:Modul3},${6:Verzeichnis},${7:Scripticon}
 	//SHOWINDIALOG: ${8:Dialognummer}
+	
+	//Überprüfen ob Datensatz ausgewählt ist
+	if (m_RecNr < 1) {
+		D.ErrorMessage("Bitte einen gültigen Datensatz auswählen!");
+		return;
+	};
+
 	$0
 ENDSCRIPT
 ///////////////////////////////////////////////////////////////////////////////]]></content>
