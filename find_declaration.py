@@ -36,7 +36,7 @@ class find_declaration(sublime_plugin.TextCommand):
 			else:
 				sublime.error_message('Es konnte keine Deklaration fuer "' + text + '" gefunden werden.')
 		else:
-			sublime.error_message('Keine FutureScript Datei.')
+			sublime.error_message('Keine FutureScript-Datei.')
 
 class goto_script(sublime_plugin.TextCommand):
 	def run(self, edit):
