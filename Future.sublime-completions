@@ -180,7 +180,6 @@
 
 
 
- ReadFromExcel(int nStartCol,int nStartRow,int nEndCol,int nEndRow,CString strFile); 
 		{ "trigger": "D.GetListSelection", "contents": "D.GetListSelection(${1:strTitle},${2:strName1},${3:tTable})$0" }
 	]
 }
