@@ -4,7 +4,7 @@
 	"completions":
 	[
 		/* CDateTime */
-		{ "trigger": "CDateTime", "contents": "CDateTime $0" };
+		{ "trigger": "CDateTime", "contents": "CDateTime $0" },
 		{ "trigger": "CompareDate", "contents": "CompareDate(${1:dtDate2})$0" },
 		{ "trigger": "CopyDate", "contents": "CopyDate(${1:dtDate2})$0" },
 		{ "trigger": "CopyTime", "contents": "CopyTime(${1:dtDate2})$0" },
@@ -64,7 +64,7 @@
 		{ "trigger": "YearMinus", "contents": "YearMinus(${1:nNumber})$0" },
 
 		/* CMoney */
-		{ "trigger": "CMoney", "contents": "CMoney $0" };
+		{ "trigger": "CMoney", "contents": "CMoney $0" },
 		{ "trigger": "CalculateNewCurrency", "contents": "CalculateNewCurrency(${1:nCurrency})$0" },
 		{ "trigger": "GetCurrency", "contents": "GetCurrency()$0" },
 		{ "trigger": "GetCurrencyValue", "contents": "GetCurrencyValue(${1:nCurrency})$0" },
@@ -85,7 +85,7 @@
 		{ "trigger": "SetValue", "contents": "SetValue(${1:dValue})$0" },
 
 		/* CTable */
-		{ "trigger": "CTable", "contents": "CTable $0" };
+		{ "trigger": "CTable", "contents": "CTable $0" },
 		{ "trigger": "AddAllInexistentRowsFromTable", "contents": "AddAllInexistentRowsFromTable(${1:tSource}, ${2:nIdCol})$0" },
 		{ "trigger": "AddAllRowsFromTable", "contents": "AddAllRowsFromTable(${1:tSource})$0" },
 		{ "trigger": "AddColumn", "contents": "AddColumn(${1:strName}, ${2:nType}, ${3:nParameter})$0" },
