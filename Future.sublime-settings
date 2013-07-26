@@ -1,4 +1,12 @@
 {
 	"extensions": ["cpp"],
-	"SyntaxCheckOnSave": false
+	"SyntaxCheckOnSave": false,
+
+	// Makes tabs with modified files more visible
+    "highlight_modified_tabs": true,
+
+    "show_tab_close_buttons": true,
+
+    // Show folders in the side bar in bold
+    "bold_folder_labels": true
 }
