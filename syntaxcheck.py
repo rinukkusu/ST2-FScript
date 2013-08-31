@@ -25,5 +25,5 @@ class SyntaxCheck(sublime_plugin.EventListener):
 
 					cl += 1
 
-				if len(errors) > 0:
+				if len(errors) > 0: # display errors
 					sublime.error_message(errors)
