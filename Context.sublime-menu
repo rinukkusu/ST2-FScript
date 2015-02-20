@@ -2,5 +2,6 @@
     { "caption": "-" },
     { "command": "find_declaration", "caption": "Gehe zu Deklaration" },
     { "command": "goto_script", "caption": "Gehe zu Scriptdefinition" },
+    { "command": "get_scripts", "caption": "Alle Scripts"},
     { "caption": "-", "id": "end" }
 ]
